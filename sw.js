@@ -1,5 +1,5 @@
 // 雙北防空避難地圖 service worker：快取優先，離線可用
-const CACHE = "shelter-map-d4bd55cd1ca5";
+const CACHE = "shelter-map-c3afcd7947d5";
 const FILES = ["./", "index.html", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
